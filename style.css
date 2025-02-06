@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html,body {
+    background-color: #f1f1f1;
+    width: 100%;
+    height: 100%;
+}
+#main-container{
+    width: 100%;
+    /* height: fit-content; */
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+#header{
+    width: 100%;
+    height: 140px;
+    background: url(coffee.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 70px;
+}
+#header ul {
+    display: flex;
+    align-items: center;
+}
+#header h1{
+    font-size: 50px;
+    margin: 0;
+}
+#header ul li a {
+    color: white;
+    text-decoration: none;
+}
+#header ul li {
+    font-size: 25px;
+    list-style-type: none;
+    margin-right: 20px;
+    cursor: pointer;
+    padding: 30px;
+}
+#header ul li a:hover{
+    color: rgb(37, 255, 255);
+}
+#hero-section{
+    width: 100%;
+    height: 500px;
+    background-color: #80635851;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    padding: 100px;
+    font-size: 25px;
+    gap: 20px;
+}
+#hero-section h2{
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    line-height: 1.5;
+    letter-spacing: 2px;
+}
+#hero-section p{
+    font-size: 30px;
+    line-height: 1.5;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+#hero-section button{
+    height: 60px;
+    width: 140px;
+    color: brown;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+    text-align: center;
+    font-size: 30px; 
+}
+#hero-section button:hover{
+    background-color: #f0d7d1;
+}
+#menu-section{
+    width: 100%;
+    background-color: #F5EBE0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+}
+#menu-section h2{
+    font-size: 40px;
+    text-align: center;
+    color: #5C3D2E;
+}
+#cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    padding: 50px;
+    position: relative;
+}
+
+#cards div {
+    height: 350px;
+    background-color:white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+}
+#cards div p{
+    margin-top: 10px;
+    font-size: 25px;
+    text-align: center;
+    color: #5C3D2E;
+    object-fit: contain;
+}
+#cards div:hover {
+    transform: scale(1.05);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+#aboutUs{
+    width: 100%;
+    background-color: #F5EBE0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    gap: 20px;
+}
+#aboutUs h2{
+    font-size: 40px;
+    text-align: center;
+    color: #5C3D2E;
+}
+#aboutUs p{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#aboutUs button{
+    background-color: #5C3D2E;
+    color: white;
+    border: none;
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    padding: 10px 10px;
+    font-size: 20px;
+    font-weight: 300;
+    cursor: pointer;
+}
+#aboutUs button:hover {
+    background-color: #4d3126;
+}
+
+
+#contact-section {
+    padding: 20px; 
+    background-color: #F5EBE0;
+}
+
+#contact-section form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+#contact-section input,
+#contact-section textarea {
+    width: 50%; 
+    padding: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    font-size: 20px; 
+}
+
+#contact-section button {
+    padding: 10px;  
+    color: white; 
+    background-color: #5C3D2E;
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 20px; 
+    font-weight: 300;
+}
+
+#contact-section button:hover {
+    background-color: #4d3126;
+}
+#footers{
+    width: 100%;
+    height: 60px;
+    background-color: #5C3D2E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+}
